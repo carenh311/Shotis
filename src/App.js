@@ -5,186 +5,178 @@ import './App.css';
 const products = [
   {
     id: 1,
-    name: "Fresa Clásica",
-    price: 2500,
-    originalPrice: 3000,
+    name: "Dulce rosa ",
+    priceSmall: 2000,
+    priceLarge: 2500,
     category: "clasicos",
     color: "#6bebffff",
-    flavor: "Fresa",
-    alcohol: "5%",
-    size: "30ml",
-    image: "https://previews.123rf.com/images/finpoints/finpoints1905/finpoints190500014/122292869-sweet-red-strawberry-alcoholic-cocktails-with-ice-cubes-in-two-shot-glasses-closeup-details-in-soft.jpg", // Shot de gelatina roja
+    flavor: "Sandia",
+    image: "https://png.pngtree.com/thumb_back/fh260/background/20241002/pngtree-watermelon-splashing-in-motion-fresh-action-with-splash-effect-image_16305463.jpg",
     rating: 4.5,
     reviews: 128,
     preparationTime: 15,
     isPopular: true,
-    discount: 17
+    liquorPrice: 1500
   },
   {
     id: 2,
-    name: "Limón Verde",
-    price: 2500,
+    name: "Lima Shock",
+    priceSmall: 2000,
+    priceLarge: 2500,
     category: "clasicos",
     color: "#32cd32",
     flavor: "Limón",
-    alcohol: "5%",
-    size: "30ml",
-    image: "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&h=200&fit=crop&auto=format", // Shot verde
+    image: "https://img.freepik.com/fotos-premium/fondo-verde-limon-artistico-salpicado-blanco_1255023-59242.jpg?semt=ais_hybrid&w=740&q=80",
     rating: 4.3,
     reviews: 89,
     preparationTime: 12,
-    isNew: true
+    isNew: true,
+    liquorPrice: 1500
   },
   {
     id: 3,
-    name: "Naranja Explosiva",
-    price: 2500,
-    originalPrice: 2800,
+    name: "Glow lulú",
+    priceSmall: 2000,
+    priceLarge: 2500,
     category: "clasicos",
     color: "#ffa500",
-    flavor: "Naranja",
-    alcohol: "5%",
-    size: "30ml",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShzWy3SHxIO5GQr-Rj4gVZhplboYvaHiyMQ&s", // Shot naranja
+    flavor: "Lulo",
+    image: "https://img.freepik.com/fotos-premium/fruto-lulo-o-naranjilla-blanco_680303-3781.jpg",
     rating: 4.7,
     reviews: 156,
     preparationTime: 10,
-    discount: 11
+    liquorPrice: 1500
   },
   {
     id: 4,
-    name: "Mango Tropical",
-    price: 3000,
+    name: "Pink explosion",
+    priceSmall: 2500,
+    priceLarge: 3000,
     category: "premium",
     color: "#ffb347",
-    flavor: "Mango",
-    alcohol: "7%",
-    size: "35ml",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnrz9mIKIRZrs-KCMg-tqBl8njfUU_8uLUgpGpebLLVIMqw6gjo6eMdcdy1Pt6krDdiE&usqp=CAU", // Shot amarillo/naranja
+    flavor: "Frambuesa",
+    image: "https://img.freepik.com/vector-premium/explosion-jugo-frambuesa-realista-bayas-splash-rojo-jugoso-diseno-paquete-producto-bebida-fresca-vector-flujo-remolino-rojo-decoracion-bebidas-saludables_208581-1778.jpg",
     rating: 4.8,
     reviews: 234,
     preparationTime: 20,
-    isPopular: true
+    isPopular: true,
+    liquorPrice: 2000
   },
   {
     id: 5,
-    name: "Maracuyá Premium",
-    price: 3000,
+    name: "Sol Mix ",
+    priceSmall: 2500,
+    priceLarge: 3000,
     category: "premium",
     color: "#dda0dd",
-    flavor: "Maracuyá",
-    alcohol: "7%",
-    size: "35ml",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMfD8AIMzTgUYybluf76yNXhqCvMaGdlJvQ&s", // Shot morado
+    flavor: "Naranja ",
+    image: "https://media.istockphoto.com/id/1210670820/es/foto/l%C3%ADquido-de-zumo-de-naranja-de-explosi%C3%B3n-con-fruta-de-naranja-sobre-fondo-blanco-renderizado-3d.jpg?s=612x612&w=0&k=20&c=RnN0wgo2WUlft03SLz2sBkBCrygn1oxqIPFPddtBRIk=",
     rating: 4.6,
     reviews: 167,
-    preparationTime: 18
+    preparationTime: 18,
+    liquorPrice: 2000
   },
   {
     id: 6,
-    name: "Coco Loco",
-    price: 3500,
-    originalPrice: 4000,
+    name: "Purple Fire",
+    priceSmall: 3000,
+    priceLarge: 3500,
     category: "especiales",
     color: "#f5f5dc",
-    flavor: "Coco y Ron",
-    alcohol: "10%",
-    size: "40ml",
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=300&h=200&fit=crop&auto=format", // Shot blanco/crema
+    flavor: "Mora",
+    image: "https://png.pngtree.com/png-clipart/20250109/original/pngtree-a-vibrant-splash-of-blackberries-and-raspberries-creating-colorful-burst-in-png-image_19078827.png",
     rating: 4.9,
     reviews: 312,
     preparationTime: 25,
     isPopular: true,
-    discount: 13
+    liquorPrice: 2500
   },
   {
     id: 7,
     name: "Mojito Shot",
-    price: 3500,
+    priceSmall: 3000,
+    priceLarge: 3500,
     category: "especiales",
     color: "#98fb98",
     flavor: "Mojito",
-    alcohol: "8%",
-    size: "35ml",
-    image: "https://images.unsplash.com/photo-1560963689-b5682b6440f8?w=300&h=200&fit=crop&auto=format", // Shot verde claro
+    image: "https://images.unsplash.com/photo-1560963689-b5682b6440f8?w=300&h=200&fit=crop&auto=format",
     rating: 4.4,
     reviews: 98,
     preparationTime: 22,
-    isNew: true
+    isNew: true,
+    liquorPrice: 2500
   },
   {
     id: 8,
     name: "Piña Colada",
-    price: 3200,
+    priceSmall: 2700,
+    priceLarge: 3200,
     category: "premium",
     color: "#fffacd",
     flavor: "Piña y Coco",
-    alcohol: "6%",
-    size: "35ml",
-    image: "https://chedrauimx.vtexassets.com/arquivos/ids/55080296-800-auto?v=638942398257900000&width=800&height=auto&aspect=true", // Shot amarillo claro
+    image: "https://chedrauimx.vtexassets.com/arquivos/ids/55080296-800-auto?v=638942398257900000&width=800&height=auto&aspect=true",
     rating: 4.5,
     reviews: 189,
-    preparationTime: 16
+    preparationTime: 16,
+    liquorPrice: 2000
   },
   {
     id: 9,
     name: "Blue Lagoon",
-    price: 4000,
+    priceSmall: 3500,
+    priceLarge: 4000,
     category: "especiales",
     color: "#1e90ff",
     flavor: "Curaçao Azul",
-    alcohol: "12%",
-    size: "40ml",
-    image: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=300&h=200&fit=crop&auto=format", // Shot azul
+    image: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=300&h=200&fit=crop&auto=format",
     rating: 4.7,
     reviews: 278,
     preparationTime: 30,
-    isPopular: true
+    isPopular: true,
+    liquorPrice: 2500
   },
   {
     id: 10,
     name: "Uva Morada",
-    price: 2500,
+    priceSmall: 2000,
+    priceLarge: 2500,
     category: "clasicos",
     color: "#8b008b",
     flavor: "Uva",
-    alcohol: "5%",
-    size: "30ml",
-    image: "https://st5.depositphotos.com/3162779/61961/i/450/depositphotos_619611566-stock-photo-black-grape-juice-glass-wooden.jpg", // Shot morado
+    image: "https://st5.depositphotos.com/3162779/61961/i/450/depositphotos_619611566-stock-photo-black-grape-juice-glass-wooden.jpg",
     rating: 4.2,
     reviews: 67,
-    preparationTime: 12
+    preparationTime: 12,
+    liquorPrice: 1500
   },
   {
     id: 11,
     name: "Sandía Refrescante",
-    price: 3000,
-    originalPrice: 3400,
+    priceSmall: 2500,
+    priceLarge: 3000,
     category: "premium",
     color: "#ff6347",
     flavor: "Sandía",
-    alcohol: "6%",
-    size: "35ml",
-    image: "https://api.lalicorera.com/storage/productos/licores/84598842-gum-shots.webp", // Shot rojo/rosado
+    image: "https://api.lalicorera.com/storage/productos/licores/84598842-gum-shots.webp",
     rating: 4.6,
     reviews: 145,
     preparationTime: 14,
-    discount: 12
+    liquorPrice: 2000
   },
   {
     id: 12,
     name: "Sex on the Beach",
-    price: 4200,
+    priceSmall: 3700,
+    priceLarge: 4200,
     category: "especiales",
     color: "#ff69b4",
     flavor: "Tropical Mix",
-    alcohol: "11%",
-    size: "40ml",
-    image: "https://cdn.tipsybartender.com/tipsybartender/jpg/wp-content/uploads/2018/01/Creamy-Sex-on-the-Beach-Shots.jpg?aspect_ratio=1:1", // Shot rosa/fucsia
+    image: "https://cdn.tipsybartender.com/tipsybartender/jpg/wp-content/uploads/2018/01/Creamy-Sex-on-the-Beach-Shots.jpg?aspect_ratio=1:1",
     rating: 4.8,
     reviews: 298,
     preparationTime: 28,
-    isPopular: true
+    isPopular: true,
+    liquorPrice: 2500
   }
 ];
 
@@ -218,8 +210,16 @@ const StarRating = ({ rating, reviews }) => {
 // Componente de tarjeta de producto mejorado
 const ProductCard = ({ product, onAddToCart }) => {
   const [quantity, setQuantity] = useState(1);
+  const [size, setSize] = useState('large');
+  const [withLiquor, setWithLiquor] = useState(false);
   const [isAdding, setIsAdding] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
+
+  const getCurrentPrice = () => {
+    const basePrice = size === 'small' ? product.priceSmall : product.priceLarge;
+    const liquorCost = withLiquor ? product.liquorPrice : 0;
+    return basePrice + liquorCost;
+  };
 
   const updateQuantity = (change) => {
     setQuantity(prev => Math.max(1, prev + change));
@@ -227,7 +227,13 @@ const ProductCard = ({ product, onAddToCart }) => {
 
   const handleAddToCart = () => {
     setIsAdding(true);
-    onAddToCart(product, quantity);
+    const itemToAdd = {
+      ...product,
+      selectedSize: size,
+      withLiquor: withLiquor,
+      currentPrice: getCurrentPrice()
+    };
+    onAddToCart(itemToAdd, quantity);
     
     setTimeout(() => {
       setIsAdding(false);
@@ -254,7 +260,6 @@ const ProductCard = ({ product, onAddToCart }) => {
         <div className="badges-container">
           {product.isPopular && <span className="badge popular">🔥 Popular</span>}
           {product.isNew && <span className="badge new">✨ Nuevo</span>}
-          {product.discount && <span className="badge discount">-{product.discount}%</span>}
         </div>
         
         {/* Botón favorito */}
@@ -284,26 +289,46 @@ const ProductCard = ({ product, onAddToCart }) => {
         {/* Rating */}
         <StarRating rating={product.rating} reviews={product.reviews} />
 
+        {/* Selector de tamaño */}
+        <div className="size-selector">
+          <button 
+            className={`size-btn ${size === 'small' ? 'active' : ''}`}
+            onClick={() => setSize('small')}
+          >
+            Pequeño - ${Number(product.priceSmall || 0).toLocaleString()}
+          </button>
+          <button 
+            className={`size-btn ${size === 'large' ? 'active' : ''}`}
+            onClick={() => setSize('large')}
+          >
+            Grande - ${Number(product.priceLarge || 0).toLocaleString()}
+          </button>
+        </div>
+
+        {/* Opción de licor */}
+        <div className="liquor-option">
+          <label className="liquor-checkbox">
+            <input 
+              type="checkbox" 
+              checked={withLiquor}
+              onChange={(e) => setWithLiquor(e.target.checked)}
+            />
+            <span className="checkbox-label">
+              🍸 Agregar licor (+${Number(product.liquorPrice || 0).toLocaleString()})
+            </span>
+          </label>
+        </div>
+
         {/* Precios */}
         <div className="price-container">
-          <div className="current-price">${product.price.toLocaleString()}</div>
-          {product.originalPrice && (
-            <div className="original-price">${product.originalPrice.toLocaleString()}</div>
-          )}
+          <div className="current-price">${Number(getCurrentPrice()).toLocaleString()}</div>
+          <div className="price-detail">Precio unitario</div>
         </div>
 
         <div className="product-info">
           <div className="info-row">
             <span className="info-label">Sabor:</span>
             <span className="info-value">{product.flavor}</span>
-          </div>
-          <div className="info-row">
-            <span className="info-label">Alcohol:</span>
-            <span className="info-value">{product.alcohol}</span>
-          </div>
-          <div className="info-row">
-            <span className="info-label">Tamaño:</span>
-            <span className="info-value">{product.size}</span>
           </div>
         </div>
 
@@ -329,11 +354,10 @@ const ProductCard = ({ product, onAddToCart }) => {
 
 // Componente del carrito mejorado
 const Cart = ({ cart, onRemoveItem, onCheckout, deliveryInfo }) => {
-  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  const deliveryFee = subtotal > 15000 ? 0 : 3000;
-  const total = subtotal + deliveryFee;
-  const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const estimatedTime = Math.max(...cart.map(item => item.preparationTime || 15)) + 10;
+  const subtotal = cart.reduce((sum, item) => sum + (Number(item.currentPrice || 0) * Number(item.quantity || 0)), 0);
+  const total = subtotal;
+  const itemCount = cart.reduce((sum, item) => sum + Number(item.quantity || 0), 0);
+  const estimatedTime = cart.length > 0 ? Math.max(...cart.map(item => Number(item.preparationTime || 15))) + 10 : 15;
 
   return (
     <div className="cart">
@@ -344,12 +368,8 @@ const Cart = ({ cart, onRemoveItem, onCheckout, deliveryInfo }) => {
       
       <div className="delivery-info">
         <div className="delivery-time">
-          <span className="delivery-icon">🚚</span>
-          <span>Entrega: {estimatedTime}-{estimatedTime + 10} min</span>
-        </div>
-        <div className="delivery-address">
-          <span className="address-icon">📍</span>
-          <span>{deliveryInfo.address}</span>
+          <span className="delivery-icon">⏱️</span>
+          <span>Preparación: {estimatedTime}-{estimatedTime + 10} min</span>
         </div>
       </div>
 
@@ -369,15 +389,16 @@ const Cart = ({ cart, onRemoveItem, onCheckout, deliveryInfo }) => {
               <div className="cart-item-info">
                 <div className="cart-item-name">{item.name}</div>
                 <div className="cart-item-details">
-                  {item.flavor} • {item.size}
+                  {item.flavor} • {item.selectedSize === 'small' ? 'Pequeño' : 'Grande'}
+                  {item.withLiquor && ' • Con licor 🍸'}
                 </div>
                 <div className="cart-item-price">
-                  x{item.quantity} • ${item.price.toLocaleString()} c/u
+                  x{item.quantity} • ${Number(item.currentPrice || 0).toLocaleString()} c/u
                 </div>
               </div>
               <div className="cart-item-actions">
                 <div className="cart-item-total">
-                  ${(item.price * item.quantity).toLocaleString()}
+                  ${Number((item.currentPrice || 0) * (item.quantity || 0)).toLocaleString()}
                 </div>
                 <button 
                   className="remove-btn"
@@ -398,15 +419,6 @@ const Cart = ({ cart, onRemoveItem, onCheckout, deliveryInfo }) => {
             <span>Subtotal</span>
             <span>${subtotal.toLocaleString()}</span>
           </div>
-          <div className="summary-row">
-            <span>Domicilio {deliveryFee === 0 ? '(Gratis)' : ''}</span>
-            <span>${deliveryFee.toLocaleString()}</span>
-          </div>
-          {deliveryFee === 0 && (
-            <div className="free-delivery-msg">
-              🎉 ¡Domicilio gratis por compras superiores a $15.000!
-            </div>
-          )}
           <div className="summary-row total">
             <span>Total</span>
             <span>${total.toLocaleString()}</span>
@@ -414,7 +426,7 @@ const Cart = ({ cart, onRemoveItem, onCheckout, deliveryInfo }) => {
           
           <button className="checkout-btn" onClick={() => onCheckout(itemCount, total, estimatedTime)}>
             <span className="checkout-icon">💳</span>
-            Pagar ${total.toLocaleString()}
+            Pagar ${Number(total).toLocaleString()}
           </button>
         </div>
       )}
@@ -452,7 +464,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [deliveryInfo] = useState({
-    address: "Tocancipá, Cundinamarca",
+    address: "Sabana Norte ",
     zone: "Centro"
   });
 
@@ -499,14 +511,21 @@ function App() {
 
   const addToCart = (product, quantity) => {
     setCart(prevCart => {
-      const existingItem = prevCart.find(item => item.id === product.id);
-      if (existingItem) {
-        return prevCart.map(item =>
-          item.id === product.id
+      // Crear una clave única basada en id, tamaño y si tiene licor
+      const itemKey = `${product.id}-${product.selectedSize}-${product.withLiquor}`;
+      const existingItemIndex = prevCart.findIndex(
+        item => `${item.id}-${item.selectedSize}-${item.withLiquor}` === itemKey
+      );
+      
+      if (existingItemIndex !== -1) {
+        // Si existe el mismo producto con las mismas opciones, aumentar cantidad
+        return prevCart.map((item, index) =>
+          index === existingItemIndex
             ? { ...item, quantity: item.quantity + quantity }
             : item
         );
       } else {
+        // Si es un producto nuevo o con diferentes opciones, agregarlo
         return [...prevCart, { ...product, quantity }];
       }
     });
@@ -517,7 +536,7 @@ function App() {
   };
 
   const checkout = (itemCount, total, estimatedTime) => {
-    alert(`🎉 ¡Pedido confirmado!\n\n📋 Resumen:\n• ${itemCount} shots\n• Total: $${total.toLocaleString()}\n• Tiempo estimado: ${estimatedTime}-${estimatedTime + 10} min\n• Dirección: ${deliveryInfo.address}\n\n🚚 ¡Tu pedido está en preparación!\n📱 Recibirás actualizaciones por WhatsApp`);
+    alert(`🎉 ¡Pedido confirmado!\n\n📋 Resumen:\n• ${itemCount} shots\n• Total: $${total.toLocaleString()}\n• Tiempo estimado: ${estimatedTime}-${estimatedTime + 10} min\n\n⏱️ ¡Tu pedido está en preparación!\n📱 Recibirás actualizaciones por WhatsApp`);
     setCart([]);
   };
 
@@ -550,11 +569,11 @@ function App() {
             </div>
             <div className="stat">
               <div className="stat-number">15-30 min</div>
-              <div className="stat-label">Tiempo de entrega</div>
+              <div className="stat-label">Tiempo de preparación</div>
             </div>
             <div className="stat">
-              <div className="stat-number">$3.000</div>
-              <div className="stat-label">Domicilio</div>
+              <div className="stat-number">12+</div>
+              <div className="stat-label">Sabores</div>
             </div>
           </div>
         </section>
